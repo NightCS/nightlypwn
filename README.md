@@ -17,6 +17,7 @@ The definitive configuration for bspwm using eww as bar and widgets, and the nig
 - alacritty
 - kitty
 - neofetch
+- eww
 - cava
 - rofi
 - bash
