@@ -1,0 +1,42 @@
+colors:
+  primary:
+    background: '#061115'
+    foreground: '#D9D7D6'
+  cursor:
+    text:   CellForeground
+    cursor: '#D9D7D6'
+  bright:
+    black:   '#1C252C'
+    red:     '#DF5B61'
+    green:   '#78B892'
+    yellow:  '#DE8F78'
+    blue:    '#6791C9'
+    magenta: '#BC83E3'
+    cyan:    '#67AFC1'
+    white:   '#D9D7D6'
+  normal:
+    black:   '#1C252C'
+    red:     '#DF5B61'
+    green:   '#78B892'
+    yellow:  '#DE8F78'
+    blue:    '#6791C9'
+    magenta: '#BC83E3'
+    cyan:    '#67AFC1'
+    white:   '#D9D7D6'
+env:
+  TERM: xterm-256color
+font:
+  bold:
+    family: JetBrains Mono Nerd Font
+  italic:
+    family: JetBrains Mono Nerd Font
+  normal:
+    family: JetBrains Mono Nerd Font
+  size: 9.5
+cursor:
+  style:
+    shape: underline
+window:
+  padding:
+    x: 0
+    y: 0

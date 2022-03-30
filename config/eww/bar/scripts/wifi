@@ -1,0 +1,13 @@
+#!/bin/sh
+
+symbol() {
+[ $(cat /sys/class/net/w*/operstate) = down ] && echo 睊 && exit
+echo 
+}
+
+name() {
+  iwgetid -r
+}
+
+[ "$1" = "icon" ] && symbol && exit
+[ "$1" = "name" ] && name && exit

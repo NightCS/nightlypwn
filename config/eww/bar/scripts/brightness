@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [[ $1 == 'get' ]]; then
+  (( br = $(brightnessctl g) / $(brightnessctl m) ))
+  echo $br
+fi
