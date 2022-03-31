@@ -4,7 +4,7 @@
 bash $HOME/.config/bspwm/scripts/autostart.sh
 
 # use 1 to use the scripts/monitor.sh file (configure it file editing it!)
-MONITOR_SUPPORT=1
+MONITOR_SUPPORT=0
 
 function setopt () {
   bspc config "$1" "$2"
