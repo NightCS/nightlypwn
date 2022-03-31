@@ -25,6 +25,7 @@ The definitive configuration for bspwm using eww as bar and widgets, and the nig
 - sh
 - dunst
 - feh
+- picom
 
 ## Installation
 
