@@ -13,7 +13,7 @@ picom -b
 dunst &
 
 # Wallpaper
-feh --bg-scale $HOME/.config/wallpapers/night/night2.png
+feh --bg-scale $HOME/.config/wallpapers/mountains/gray.jpg
 
 # don't remove this please
 sxhkd &

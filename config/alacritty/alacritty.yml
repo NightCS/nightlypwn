@@ -4,7 +4,7 @@ colors:
     foreground: '#D9D7D6'
   cursor:
     text:   CellForeground
-    cursor: '#D9D7D6'
+    cursor: '#d9d7d6'
   bright:
     black:   '#1C252C'
     red:     '#DF5B61'
@@ -15,28 +15,28 @@ colors:
     cyan:    '#67AFC1'
     white:   '#D9D7D6'
   normal:
-    black:   '#1C252C'
-    red:     '#DF5B61'
-    green:   '#78B892'
-    yellow:  '#DE8F78'
-    blue:    '#6791C9'
-    magenta: '#BC83E3'
-    cyan:    '#67AFC1'
-    white:   '#D9D7D6'
+    black:   '#484e5b'
+    red:     '#f16269'
+    green:   '#8cd7aa'
+    yellow:  '#e9967e'
+    blue:    '#79aaeb'
+    magenta: '#c488ec'
+    cyan:    '#7acfe4'
+    white:   '#e5e5e5'
 env:
   TERM: xterm-256color
 font:
   bold:
-    family: JetBrains Mono Nerd Font
+    family: Iosevka Nerd Font
   italic:
-    family: JetBrains Mono Nerd Font
+    family: Iosevka Nerd Font
   normal:
-    family: JetBrains Mono Nerd Font
-  size: 9.5
-cursor:
-  style:
-    shape: underline
+    family: Iosevka Nerd Font
+  size: 11
 window:
   padding:
-    x: 0
-    y: 0
+    x: 15
+    y: 15
+cursor:
+  style:
+    shape: Block

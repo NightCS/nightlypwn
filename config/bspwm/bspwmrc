@@ -4,18 +4,28 @@
 bash $HOME/.config/bspwm/scripts/autostart.sh
 
 # use 1 to use the scripts/monitor.sh file (configure it file editing it!)
-MONITOR_SUPPORT=0
+MONITOR_SUPPORT=1
 
 function setopt () {
   bspc config "$1" "$2"
 }
 
 # borders and gaps
-setopt border_width 0
-setopt window_gap 10
+setopt border_width 1
+setopt window_gap 20
+
+BACKGROUND=#061115
+
+setopt normal_border_color "$BACKGROUND"
+setopt focused_border_color "$BACKGROUND"
+setopt presel_feedback_color "$BACKGROUND"
+
+export PATH="$HOME/.local/bin:$PATH"
+
+pkill borders ; borders &
 
 # behaviour stuff
-setopt left_padding 47
+setopt left_padding 65
 setopt split_ratio 0.52
 setopt borderless_monocle false
 setopt gapless_monocle false
@@ -28,11 +38,10 @@ bspc subscribe node_state | while read -r _ _ _ _ state flag; do
   fi
   if [ "$flag" == on ]; then
     setopt left_padding 0
-    eww -c $HOME/.config/eww/bar close-all
+    killall -q eww
   else
-    setopt left_padding 47
-    eww -c $HOME/.config/eww/bar open bar
-    eww -c $HOME/.config/eww/bar open bar2
+    setopt left_padding 65
+    bash $HOME/.config/eww/bar/launch.sh
   fi
 done &
 

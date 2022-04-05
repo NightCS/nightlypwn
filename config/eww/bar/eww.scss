@@ -12,8 +12,8 @@
 $background: #061115;
 $foreground: #D9D7D6;
 
-$black: #08151a;
-$gray: #1f2335;
+$black: #162026;
+$gray: #484e5b;
 $red: #DF5B61;
 $green: #78B892;
 $yellow: #DE8F78;
@@ -26,6 +26,7 @@ $white: $foreground;
 .eww_bar{
   background-color: $background;
   padding: .3rem;
+  border-radius: 12px;
 }
 
 // Launcher

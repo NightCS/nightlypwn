@@ -8,7 +8,7 @@ alias la='exa --icons -la'
 alias tree='exa --icons --tree'
 alias cat='bat --theme base16 --paging=never --style=plain'
 alias g='copier -c github_token 2>&1 > /dev/null && git'
-alias clear='clear && ~/.config/color-scripts/launch.sh'
+# alias clear='clear && ~/.config/color-scripts/launch.sh'
 
 # color
 set fish_color_normal brwhite
@@ -17,8 +17,8 @@ set fish_color_param brcyan
 set fish_color_error brred
 
 # vi-mode
-set fish_cursor_default underscore
-set fish_cursor_insert underscore
+set fish_cursor_default block
+set fish_cursor_insert block
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
 set fish_color_quote brgreen
@@ -27,7 +27,7 @@ set fish_color_quote brgreen
 # starship init fish | source
 
 # startup
-~/.config/color-scripts/launch.sh
+# ~/.config/color-scripts/launch.sh
 
 # functions
 function launch_cs ()

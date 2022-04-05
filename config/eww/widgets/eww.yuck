@@ -13,21 +13,6 @@
 (defpoll music-icon :interval "1s" "./scripts/music get-icon")
 (defpoll music-name :interval "1s" "./scripts/music get-audio")
 
-;; SYS-STATS WIDGET
-
-(defwidget stats []
-  (box :orientation "h"
-    :class "stats-container"
-    (progress
-      :orientation "v"
-      :value memory
-      :class "memory-scale"
-    )
-  )
-)
-(defpoll memory :interval "1s" "./scripts/monitor memory")
-(defpoll processor :interval "1s" "./scripts/monitor processor")
-
 ;; MUSIC WINDOW
 
 (defwindow music
@@ -35,15 +20,5 @@
               :y "60%"
               :width "270px"
               :height "110px")
-  :monitor 1
+  :monitor 0
 (mus))
-
-;; USAGE WINDOW
-
-(defwindow sys-stats
-  :geometry (geometry :x "78%"
-              :y "1%"
-              :width "270px"
-              :height "140px")
-  :monitor 1
-(stats))
