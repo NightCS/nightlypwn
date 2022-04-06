@@ -2,8 +2,6 @@
 
 The definitive configuration for bspwm using eww as bar and widgets, and the night colorscheme!
 
-> I have some bugs and problems to solve, remember it!
-
 ![demonstration](./misc/demonstration.png)
 
 ## Requirements
