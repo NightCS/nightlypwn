@@ -26,4 +26,3 @@ $HOME/.config/eww/bar/launch.sh
 
 # eww
 eww daemon
-eww open-many settings-panel
