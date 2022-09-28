@@ -1,5 +1,7 @@
 # Nightlypwn
 
+> (Deprecated)
+
 The definitive configuration for bspwm using eww as bar and widgets, and the night colorscheme!
 
 ![demonstration](./misc/demonstration.png)
